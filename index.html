@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Weather App </title>
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Yanone+Kaffeesatz:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="weather-app-wrapper">
+    <div class="weather-app">
+      <form id="search-form">
+        <div class="row input-group rounded">
+          <div class="col-9">
+            <input 
+            type="search" 
+            class="form-control rounded" 
+            placeholder="Type your city..." 
+            id="search-input"
+            autocomplete="off"
+            />
+          </div>
+          <div class="col-3">  
+            <input type="submit"
+            class="btn btn-primary input-group-text border-0"
+            value="Search"
+            id="search-addon"
+            />
+          </div>
+        </div>
+      </form>
+      <div class="weather-content">
+        <div class="row">
+          <div class="col-sm-8">
+            <h1 id="city">
+              Frankfurt
+            </h1>
+            <ul>
+              <li>
+                <span>
+                  Saturday 21:00, Clear
+                </span>
+              </li>
+              <li>
+                  Humidity: 77%
+              </li>
+              <li>
+                  Wind: 18 mph
+              </li>
+            </ul>                
+          </div>
+          <div class="col-sm-4 p-3 temperature d-flex justify-content-end">        
+            <span id="temperature">
+              19
+            </span>        
+            <span class="units">
+              °C        
+            </span>
+            <img id="cloudy" src="images/cloudy.png" alt="" width="80px">
+          </div>
+        </div> 
+      </div>
+      <div class="weather-forecast row">
+          <div class="col">
+            <div class="weather-forecast-column">
+              <div class="weather-forecast-day">
+                Sun
+              </div>
+              <div class="weather-forecast-temp">
+                15°C
+              </div>
+            </div>
+          </div>
+          
+      </div>
+      <footer>
+        <a href="https://github.com/KattyVT/weather-app-K">
+          Open source on GitHub        
+        </a>
+          coded by KattyV
+      </footer>      
+    </div>
+  </div>
+</div>
+
+ <script src="src/app.js">
+   
+ </script>   
+</body>
+</html>
