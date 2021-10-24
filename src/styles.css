@@ -3,7 +3,6 @@ body {
 }
 h1 {
   padding-top: 20px;
-  padding-bottom: 10px;
 }
 
 ul {
@@ -34,4 +33,22 @@ li:first-letter {
   padding: 40px;
   border: 1px solid #ced0d3;
   border-radius: 4px;
+}
+
+.temperature-container {
+  margin-top: 30px;
+}
+.temperature-container img {
+  width: 64px;
+  height: 64px;
+}
+span#temperature {
+  font-size: 70px;
+  line-height: 1;
+}
+span#units {
+  font-size: 20px;
+  line-height: 1;
+  position: relative;
+  top: -34px;
 }
