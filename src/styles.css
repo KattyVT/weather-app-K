@@ -44,9 +44,17 @@ span#temperature {
   font-size: 70px;
   line-height: 1;
 }
-span#units {
-  font-size: 20px;
+span.units {
+  font-size: 18px;
   line-height: 1;
   position: relative;
   top: -34px;
+}
+
+.temperature-container .active {
+  color: rgb(94, 93, 93);
+  cursor: default;
+}
+.temperature-container .active:hover {
+  text-decoration: none;
 }
