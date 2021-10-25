@@ -44,11 +44,21 @@ function displayTemperature(response) {
     iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-
+function search(city) {
 let apiKey = "743bee57fddbfaf52447193a87d5dd25";
 let units = "metric";
-let city = "Lima"
-
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
-console.log(apiUrl);
 axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+    event.preventDefault();
+    let cityInputElement = document.querySelector("#search-input");
+    search(cityInputElement.value);
+}
+
+search("Frankfurt");
+
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
