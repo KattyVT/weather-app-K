@@ -58,7 +58,7 @@ function displayForecast(response) {
 
 
 function getForecast(coordinates) {
-  console.log(coordinates);
+  //console.log(coordinates);
     let apiKey = "743bee57fddbfaf52447193a87d5dd25";
     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
     console.log(apiUrl);
@@ -67,7 +67,7 @@ function getForecast(coordinates) {
 
 
 function displayTemperature(response) {
-    console.log(response.data.main.temp);
+    //console.log(response.data.main.temp);
     let temperatureElement = document.querySelector("#temperature");
     let cityElement= document.querySelector("#city");
     let descriptionElement = document.querySelector("#description");
@@ -105,7 +105,7 @@ function handleSubmit(event) {
 }
 
 
-function displayFarenheitTemp(event) {
+/*function displayFarenheitTemp(event) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
     //remove active class from celsius link
@@ -124,16 +124,16 @@ function displayCelsiusTemp(event) {
     temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
-let celsiusTemperature = null;
+let celsiusTemperature = null;*/
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-let farenheitLink = document.querySelector("#farenheit-link");
+/*let farenheitLink = document.querySelector("#farenheit-link");
 farenheitLink.addEventListener("click", displayFarenheitTemp);
 
 
 let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsiusTemp);
+celsiusLink.addEventListener("click", displayCelsiusTemp);*/
 
 search("Frankfurt");
