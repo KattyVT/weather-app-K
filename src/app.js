@@ -136,4 +136,4 @@ farenheitLink.addEventListener("click", displayFarenheitTemp);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemp);*/
 
-search("Frankfurt");
+search("Paris");
